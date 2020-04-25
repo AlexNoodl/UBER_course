@@ -4,11 +4,15 @@
 
 header {
     position: relative;
+    height: 50px;
 }
 
 nav {
-    min-height: 50px;
+    position: fixed;
+    width: 100%;
+    height: 50px;
     background-color: #212121;
+    z-index: 2;
 }
 
 .menu {
@@ -32,6 +36,7 @@ nav {
 
 .subheader {
     position: absolute;
+    top: 50px;
     width: 100%;
     min-height: 84px;
     background-color: rgba(0, 0, 0, .6);
@@ -137,4 +142,66 @@ nav {
     font-weight: 400;
     line-height: 68px;
     text-transform: uppercase;
+}
+
+.reasons {
+    padding: 71px 0 65px 0;
+}
+
+.label {
+    margin: 0 auto;
+    width: 112px;
+    height: 24px;
+    background-color: #000000;
+    padding: 5px 12px;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 0 auto;
+    margin-top: 38px;
+    color: #222222;
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.reasons .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.reasons .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_block .reasons_descr {
+    width: 343px;
+}
+
+.reasons .reasons_block .reasons._descr .reasons_descr_subtitle {
+    color: #1eacc7;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.reasons .reasons_block .reasons._descr .reasons_descr_text {
+    color: #202020;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
 }
